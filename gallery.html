@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/main.css"> 
+</head>
+<body>
+        <!-- start of navbar -->
+         <nav class="navbar navbar-expand-lg  sticky-top bg-white">
+            <div class="container  ">
+              
+              <a class="navbar-brand " href="#">
+                <img src="./assets/img/public/logo.svg" alt="childiT icon">
+              </a>
+             
+              <div class="d-flex">
+                <div class="search-section navbar-toggler">
+                  <i class=" mt-1 fa-solid fa-magnifying-glass search-icon-toggler"></i>
+                  <div class="search-icon-form-toggler">
+                    
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" required>
+                      <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                      
+                    </form>
+                  </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasWithBothOptions" aria-controls="#offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            
+            </div>
+       
+    
+            <div class=" offcanvas offcanvas-end nav-offcanvas collapse" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body " >
+                <div  id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 gap-2">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Parent Info</a>
+                    </li>
+                    <li class="nav-item dropdown  ">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                      </a>
+                      <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                        <li><a class="dropdown-item bg-white" href="#">Events</a></li>
+                        <li><a class="dropdown-item bg-white" href="#">Event Post</a></li>
+      
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Gallery
+                      </a>
+                      <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                        <li><a class="dropdown-item bg-white" href="#">Gallery Boxed</a></li>
+                        <li><a class="dropdown-item bg-white" href="#">Gallery full width</a></li>
+      
+                      </ul>
+                    </li>
+      
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                        <li><a class="dropdown-item bg-white" href="#">FAQs</a></li>
+                        <li><a class="dropdown-item bg-white" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item bg-white" href="#">Prices</a></li>
+      
+                      </ul>
+                    </li>
+            
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog
+                      </a>
+                      <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                        <li><a class="dropdown-item bg-white" href="#">Blog Posts</a></li>
+                        <li><a class="dropdown-item bg-white" href="#">Single Post</a></li>
+      
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Contacts</a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Parent Info</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Events
+                    </a>
+                    <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                      <li><a class="dropdown-item bg-white" href="#">Events</a></li>
+                      <li><a class="dropdown-item bg-white" href="#">Event Post</a></li>
+    
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                      <li><a class="dropdown-item bg-white" href="#">Gallery Boxed</a></li>
+                      <li><a class="dropdown-item bg-white" href="#">Gallery full width</a></li>
+    
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                      <li><a class="dropdown-item bg-white" href="#">FAQs</a></li>
+                      <li><a class="dropdown-item bg-white" href="#">Testimonials</a></li>
+                      <li><a class="dropdown-item bg-white" href="#">Prices</a></li>
+    
+                    </ul>
+                  </li>
+          
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                      <li><a class="dropdown-item bg-white" href="#">Blog Posts</a></li>
+                      <li><a class="dropdown-item bg-white" href="#">Single Post</a></li>
+    
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Contacts</a>
+                  </li>
+                  
+                </ul>
+                <div class="search-section">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <div class="search-icon-form">
+                    
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" required>
+                      <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                      
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+    
+            </div>
+          </nav>
+         <!-- end of navbar -->
+  <!-- start of quick list -->
+  <div class="qiucList">
+    <div class="quick-link qlink1 ">
+      <div class="quick-link-head">
+       <div class="quick-head-img">
+       <img src="./assets/img/public/map-marker-white.svg">
+       </div>
+       <span>Location</span>
+      </div>
+      <div class="quick-link-item quick-link-item1">
+       <div class="inner-quick-item location-img">
+         <img src="./assets/img/public/map.png">
+       </div>
+      </div>
+    </div>
+
+    <div class="quick-link qlink2">
+     <div class="quick-link-head">
+       <div class="quick-head-img">
+        <img src="./assets/img/public/calendar-white.svg">
+       </div>
+      <span>Book a tour</span>
+     </div>
+     <div class="quick-link-item quick-link-item2">
+       <div class="inner-quick-item ">
+         <h2>Book a tour</h2>
+         <form action="post" >
+           <input class="w-100 mb-2" type="text" name="name"  placeholder="Your name" required>
+           <div class="row">
+              <div class="col-md-6">
+              <input type="email" name="email"  placeholder="Your e-mail" required>
+             </div>
+             <div class="col-md-6">
+               <input type="text" name="phone"  placeholder="Your Phone" required>
+              </div>
+           </div>
+           <input class="w-100 mt-2 mb-3" type="datetime" name="bd"  placeholder="What is your child's birth date?">
+           
+           <label class="w-100  mb-3" >Which care days do you required?</label>
+            
+           <ul class="d-flex w-50 gap-3 flex-wrap">
+             <li>
+                 <input type="checkbox" id="Monday" name="Monday" value="Monday">
+                 <label for="Monday">Monday</label>
+             </li>
+             <li>
+               <input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+               <label for="Thursday"> Thursday</label>
+             </li>
+             <li>
+               <input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+               <label for="Tuesday"> Tuesday</label>
+             </li>
+             <li>
+             <input type="checkbox" id="Friday" name="Friday" value="Friday">
+             <label for="Friday"> Friday</label>
+           </li>
+             <li>
+               <input type="checkbox" id="Wednsday" name="Wednsday" value="Wednsday">
+               <label for="Wednsday">Wednsday</label>
+           </li>
+           <li>
+             <input type="checkbox" id="Saturday" name="Saturday" value="Saturday">
+             <label for="Saturday"> Saturday</label>
+           </li>
+           
+            
+           </ul>
+
+           
+          
+           <input class="w-100 mb-3" type="datetime" name="startDate"  placeholder="Desired Start Date">
+           <button type="submit"> Submit <i class="fa-solid fa-arrow-right"></i> </button>
+         </form>
+       </div>
+      </div>
+   </div>
+
+
+   <div class="quick-link qlink3">
+     <div class="quick-link-head ">
+       <div class="quick-head-img">
+        <img src="./assets/img/public/paper-white.svg">
+       </div>
+      <span>For Parents</span>
+     </div>
+     <div class="quick-link-item quick-link-item3">
+       <div class="inner-quick-item">
+       <h2>For Parents</h2>
+       <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+         <li class="d-flex gap-3 align-items-center justify-content-between">
+           <div class="d-flex gap-3 justify-content-center">
+             <img src="./assets/img/public/handbook.svg" alt="handbook" >
+             <p>Parent Handbook (246 Kb)</p>
+           </div>
+            <a href="#">
+             <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+             <span>download</span>
+            </a>
+         </li>
+         <li class="d-flex gap-3 align-items-center justify-content-between">
+           <div class="d-flex gap-3 justify-content-center">
+           <img src="./assets/img/public/checklist.svg" alt="checklist" >
+           <p>Child Care Checklist (95 KB)</p>
+           </div>
+           <a href="#">
+             <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+             <span>download</span>
+           </a>
+          
+         </li>
+         <li class="d-flex gap-3 align-items-center justify-content-between">
+           <div class="d-flex gap-3 justify-content-center">
+           <img src="./assets/img/public/paper-form.svg" alt="paper-form" >
+           <p>Agreement Form (94 KB)</p>
+           </div>
+           <a href="#">
+             <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+             <span>download</span>
+           </a>
+        
+         </li>
+         <li class="d-flex gap-3 align-items-center justify-content-between">
+           <div class="d-flex gap-3 justify-content-center">
+           <img src="./assets/img/public/billing.svg" alt="billing" >
+           <p>Monthly Billing Chart (95 KB)</p>
+           </div>
+           <a href="#">
+             <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+             <span>download</span>
+           </a>
+         
+         </li>
+         
+       </ul>
+     </div>
+     </div>
+   </div>
+
+   <div class="quick-link qlink4">
+     <div class="quick-link-head">
+       <div class="quick-head-img">
+         <img src="./assets/img/public/phone-white.svg">
+       </div>
+      <span>Contacts</span>
+     </div>
+     <div class="quick-link-item quick-link-item4">
+       <div class="inner-quick-item">
+       <h2>Our Contacts</h2>
+       <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+         <li class="d-flex gap-2">
+           <img src="./assets/img/public/map-marker-small.svg" alt="marker" >
+            <a href="#">3261 Anmoore Road Brooklyn, NY 11230</a>
+         </li>
+         <li class="d-flex gap-2">
+           <img src="./assets/img/public/call.svg" alt="call" >
+           <a href="#">800-123-4567, Fax: 718-724-3312</a>
+         </li>
+         <li class="d-flex gap-2">
+           <img src="./assets/img/public/envelope.svg" alt="envelope" >
+           <a href="#">officeone@youremaissss.com</a>
+         </li>
+         <li class="d-flex gap-2 align-items-start">
+           <img src="./assets/img/public/clock.svg" alt="clock" >
+           <span>Mon-Fri: 9:00 am – 5:00 pm</span>
+         </li>
+         
+       </ul>
+     </div>
+     </div>
+   </div>
+</div>
+
+
+<!-- end of quick list -->
+        <header class="header-gallery">
+            <div class="container ">
+               
+                    <h1>Gallery</h1>
+               
+            </div>
+        </header>
+
+
+        <section class="about-us    ">
+            <div class="container text-center  d-flex flex-column justify-content-center align-items-center   wow bounceInUp " data-wow-duration="2s">
+              <span>A quick peek at our centre</span>
+              <h2>ChildiT Centre Photo Gallery</h2>
+              <p class="tab-head">We aim to capture the many smiles we see every day, show the many experiences the children have every day and provide you as the families a visual experience.</p>
+              <ul class="nav  mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item d-flex " role="presentation">
+                  <button class="nav-link  active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All</button>
+                  <div class="vr h-25  mt-2"></div>
+                </li>
+                <li class="nav-item d-flex" role="presentation">
+                  <button class="nav-link" id="pills-InfantsRooms-tab" data-bs-toggle="pill" data-bs-target="#pills-InfantsRooms" type="button" role="tab" aria-controls="pills-InfantsRooms" aria-selected="false">Infants Rooms</button>
+                  <div class="vr h-25  mt-2"></div>
+                </li>
+                <li class="nav-item d-flex" role="presentation">
+                  <button class="nav-link" id="pills-Outdoor-tab" data-bs-toggle="pill" data-bs-target="#pills-Outdoor" type="button" role="tab" aria-controls="pills-Outdoor" aria-selected="false">Outdoor</button>
+                  <div class="vr h-25  mt-2"></div>
+                </li>
+                <li class="nav-item d-flex" role="presentation">
+                  <button class="nav-link" id="pills-PreschoolRoom-tab" data-bs-toggle="pill" data-bs-target="#pills-PreschoolRoom" type="button" role="tab" aria-controls="pills-PreschoolRoom" aria-selected="false">Preschool Room</button>
+                  <div class="vr h-25  mt-2"></div>
+                </li>
+
+                <li class="nav-item d-flex" role="presentation">
+                    <button class="nav-link" id="pills-SummerCamp-tab" data-bs-toggle="pill" data-bs-target="#pills-SummerCamp" type="button" role="tab" aria-controls="pills-SummerCamp" aria-selected="false">Summer Camp</button>
+                    <div class="vr h-25  mt-2"></div>
+                  </li>
+                  <li class="nav-item d-flex" role="presentation">
+                    <button class="nav-link" id="pills-ToddlersRooms-tab" data-bs-toggle="pill" data-bs-target="#pills-ToddlersRooms" type="button" role="tab" aria-controls="pills-ToddlersRooms" aria-selected="false">Toddlers Rooms</button>
+                  </li>
+              </ul>
+              <div class="tab-content w-100 m-auto" id="pills-tabContent">
+                <div class=" d-flex flex-column justify-content-start align-items-center tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+                        <div class="container  ms-5 ps-5">
+                            <div class="imgs-div">
+                               <a href="#" ><img src="./assets/img/Gallery/grid-1-x2-255x255.jpg" alt="gallery1"></a> 
+                               <a href="#" ><img src="./assets/img/Gallery/grid-2-x2-255x255.jpg" alt="gallery2"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-3-x2-255x255.jpg" alt="gallery3"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-4-255x255.jpg" alt="gallery4"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-5-255x255.jpg" alt="gallery5"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-6-255x255.jpg" alt="gallery6"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-7-255x255.jpg" alt="gallery7"></a>
+                               <a href="#"><img src="./assets/img/Gallery/grid-8-255x255.jpg" alt="gallery8"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-9-255x255.jpg" alt="gallery9"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-10-255x255.jpg" alt="gallery10"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-11-255x255.jpg" alt="gallery11"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-12-255x255.jpg" alt="gallery12"></a>
+                               <a href="#"><img src="./assets/img/Gallery/grid-13-255x255.jpg" alt="gallery13"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-14-255x255.jpg" alt="gallery14"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-15-255x255.jpg" alt="gallery15"></a>
+                               <a href="#" ><img src="./assets/img/Gallery/grid-16-255x255.jpg" alt="gallery16"></a>
+                            </div>
+                        </div>           
+  
+                </div>
+  
+                <div class=" tab-pane fade  " id="pills-InfantsRooms" role="tabpanel" aria-labelledby="pills-InfantsRooms-tab" tabindex="0">
+                    <div class="container  d-flex justify-content-start align-items-center ms-5 ps-5 ">
+                        <div class="imgs-div">
+                           <a href="#" ><img src="./assets/img/Gallery/grid-1-x2-255x255.jpg" alt="gallery1"></a> 
+                           <a href="#" ><img src="./assets/img/Gallery/grid-2-x2-255x255.jpg" alt="gallery2"></a>
+                           
+                        </div>
+                    </div> 
+                </div>
+                
+                
+                <div class=" d-flex flex-column justify-content-start align-items-center  tab-pane fade" id="pills-Outdoor" role="tabpanel" aria-labelledby="pills-Outdoor-tab" tabindex="0">
+                    <div class="container  ms-5 ps-5 ">
+                        <div class="imgs-div">
+                            <a href="#" ><img src="./assets/img/Gallery/grid-5-255x255.jpg" alt="gallery5"></a>
+                            <a href="#" ><img src="./assets/img/Gallery/grid-7-255x255.jpg" alt="gallery7"></a>
+                            <a href="#" ><img src="./assets/img/Gallery/grid-10-255x255.jpg" alt="gallery10"></a>
+                            <a href="#"><img src="./assets/img/Gallery/grid-12-255x255.jpg" alt="gallery12"></a>
+                            <a href="#" ><img src="./assets/img/Gallery/grid-15-255x255.jpg" alt="gallery15"></a>
+                            <a href="#" ><img src="./assets/img/Gallery/grid-16-255x255.jpg" alt="gallery16"></a>
+                           
+                        </div>
+                    </div> 
+                </div>
+                <div class="parentSay d-flex flex-column justify-content-start align-items-center tab-pane fade" id="pills-PreschoolRoom" role="tabpanel" aria-labelledby="pills-PreschoolRoom-tab" tabindex="0">
+                    <div class="container  ms-5 ps-5">
+                        <div class="imgs-div">
+
+                           <a href="#" ><img src="./assets/img/Gallery/grid-4-255x255.jpg" alt="gallery4"></a>
+                          
+                           <a href="#" ><img src="./assets/img/Gallery/grid-8-255x255.jpg" alt="gallery8"></a>
+                           
+                           <a href="#" ><img src="./assets/img/Gallery/grid-13-255x255.jpg" alt="gallery13"></a>
+                           
+                        </div>
+                    </div>  
+                </div>
+
+                <div class=" d-flex flex-column justify-content-start align-items-center  tab-pane fade" id="pills-SummerCamp" role="tabpanel" aria-labelledby="pills-SummerCamp-tab" tabindex="0">
+                    <div class="container  ms-5 ps-5">
+                        <div class="imgs-div">
+
+                           <a href="#" ><img src="./assets/img/Gallery/grid-6-255x255.jpg" alt="gallery6"></a>
+                          
+                           
+                        </div>
+                    </div> 
+                </div>
+                <div class=" d-flex flex-column justify-content-start align-items-center tab-pane fade" id="pills-ToddlersRooms" role="tabpanel" aria-labelledby="pills-ToddlersRooms-tab" tabindex="0">
+                    <div class="container  ms-5 ps-5">
+                        <div class="imgs-div">
+                           <a href="#" ><img src="./assets/img/Gallery/grid-3-x2-255x255.jpg" alt="gallery3"></a>
+                           <a href="#" ><img src="./assets/img/Gallery/grid-11-255x255.jpg" alt="gallery11"></a>
+                           <a href="#" ><img src="./assets/img/Gallery/grid-14-255x255.jpg" alt="gallery14"></a>
+                           <a href="#" ><img src="./assets/img/Gallery/grid-9-255x255.jpg" alt="gallery9"></a>
+                           
+                        </div>
+                    </div> 
+                </div>
+              
+              </div>
+            </div>
+            
+           </section>
+
+
+      <!-- start of Footer -->
+      <footer class="footer d-flex justify-content-center align-items-center ">
+        <div class="container py-5">
+          <div class="row row-gap-5">
+            <div class="col-md-12 col-lg-4 ">
+              <div class="logo-div d-flex flex-column gap-3 justify-content-center justify-content-lg-start align-items-center align-items-lg-start">
+              <a href="#"><img src="./assets/img/public/logo.svg" alt="logo"></a>
+              <p>Our experienced team strives to offer a creative and engaging environment and the opportunity for children to learn, grow, and thrive.</p>
+              <form>
+                <input  type="text" name="signup" class="signup" placeholder="Newsletter signup" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right ps-2 "></i></button>
+              </form>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-0 m-0">
+              <h2>Quick Links</h2>
+              <ul class="linksUl d-flex flex-wrap ps-2">
+                <li class="d-flex">> <a href="#">About us</a></li>
+                <li class="d-flex">> <a href="#">Prices</a></li>
+                <li class="d-flex">> <a href="#">Programs</a></li>
+                <li class="d-flex">> <a href="#">FAQs</a></li>
+                <li class="d-flex">> <a href="#">Parent Info</a></li>
+                <li class="d-flex">> <a href="#">Blog</a></li>
+                <li class="d-flex">> <a href="#">Events</a></li>
+                <li class="d-flex">> <a href="#">Testimonials</a></li>
+                <li class="d-flex">> <a href="./gallery.html">Gallery</a></li>
+                <li class="d-flex">> <a href="#">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 ">
+              <h2>Our Contacts</h2>
+              <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/map-marker-small.svg" alt="marker" >
+                   <a href="#">3261 Anmoore Road Brooklyn, NY 11230</a>
+                </li>
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/call.svg" alt="call" >
+                  <a href="#">800-123-4567, Fax: 718-724-3312</a>
+                </li>
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/envelope.svg" alt="envelope" >
+                  <a href="#">officeone@youremaissss.com</a>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/public/clock.svg" alt="clock" >
+                  <span>Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</span>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+     </footer>
+<!-- end of Footer -->
+
+<!-- start of Privacy Policy -->
+     <section class="PrivacyPolicy">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex gap-3 justify-content-center align-items-center">
+              <span>© 2019 <a href="#">ChildiT</a>. All Rights Reserved. <a href="#">Privacy Policy</a></span>
+            </div>
+            <div class="col-12 col-md-6 d-flex gap-3 justify-content-center align-items-center">
+              <span>Follow us: </span>
+              <ul class="d-flex text-start p-0 justify-content-start align-items-end gap-3">
+                <li><a href="#">
+                  <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a></li>
+                <li>
+                  <a href="#">
+                    <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a></li>
+                <li>
+                  <a href="#">
+                    <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+     
+        <!-- end of Privacy Policy -->
+        <button class="up-btn">
+        <i class="fa-solid fa-arrow-up"></i> 
+        </button>
+
+
+        <div class="modal fade imgModal" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content ">
+                <div class="modal-body galleryModal">
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://rouninmedia.github.io/axe/axe.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
